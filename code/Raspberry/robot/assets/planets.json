@@ -1,0 +1,10 @@
+{
+    "earth":    ["A", "earth.mp3"],
+    "jupiter":  ["B", "jupiter.mp3"],
+    "mars":     ["C", "mars.mp3"],
+    "mercury":  ["D", "mercury.mp3"],
+    "neptune":  ["E", "neptune.mp3"],
+    "saturn":   ["F", "saturn.mp3"],
+    "uranus":   ["G", "uranus.mp3"],
+    "venus":    ["H", "venus.mp3"]
+}

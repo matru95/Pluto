@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="space.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div>
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </div>
+    <div id="header" class="header">
+      <img id="logo" src="images/logo.svg">
+    </div>
+    <div id="modalLoader" class="modal">
+      <div class="loader" style="position: absolute; left: calc(50% - 40px); top: calc(50% - 40px);">
+      </div>
+    </div>
+      <div class="mainArea">
+      <div id="message" class="message">
+        <img id="messageImg">
+        <h4 id="messageText">
+        </h4>
+      </div>
+      <h1 class="title">Space <br class="brTitle"> Permanent Exhibition</h1>
+      <h2 class="subtitle" style="margin-bottom: 50px;">Meet Pluto and ask it some questions</h2>
+        <div class="button" onclick="set_command(1);">
+          <img src="images/play.svg">
+          <h2>Who are you?</h2>
+          <div class="buttonText">
+            My name is Pluto and I am from planet Mars.
+          </div>
+        </div>
+        <div class="button" onclick="set_command(2);">
+          <img src="images/play.svg">
+          <h2>What are you doing on earth?</h2>
+          <div class="buttonText">
+            I am currently travelling around the galaxy and now I am working with the space exhibition at the Science and Technology Museum. If you want to learn about the galaxy with me you can explore the virtual exhibition.
+          </div>
+        </div>
+        <div class="button" onclick="set_command(3);">
+          <img src="images/play.svg">
+          <h2>What is the exhibition about?</h2>
+          <div class="buttonText">
+            The exhibition is about stories, knowledge, and technologies for exploring the cosmos. We have the only fragment of the moon anywhere in Italy!
+          </div>
+        </div>
+        <div class="button" onclick="redirect_to_museum();">
+          <img src="images/redirect.svg" width="20px" style="position: absolute; top: 20px; right: 20px; width: 20px;">
+          <h2>More information</h2>
+          Visit the exhibition website for additional information.
+        </div>
+      </div>
+  </body>
+  <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if(window.innerWidth > 700){
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        document.getElementById("logo").style.width = "60px";
+        } else {
+          document.getElementById("logo").style.width = "100px";
+        }
+      }
+    }
+  </script>
+  <script src="js/index.js"></script>
+</html>
